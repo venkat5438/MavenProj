@@ -72,6 +72,14 @@ public class Hooks implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthe
              new Object[]{"chrome", "54.0", "OS X 10.10"},
      };
  }
+ 
+ @DataProvider(name = "allLinks", parallel = true)
+ public static Object[][] allLinksOfAPage(Method testMethod) {
+     return new Object[][]{
+             new Object[]{"MicrosoftEdge", "14.14393", "Windows 10"},
+             
+     };
+ }
 
  /**
   * @return the {@link WebDriver} for the current thread
