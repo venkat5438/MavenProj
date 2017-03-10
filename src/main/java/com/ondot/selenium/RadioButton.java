@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 
 import com.ondot.tests.Hooks;
 import com.ondot.utils.AutoConstants.URL;
+import com.ondot.utils.AutoUtils;
 import com.ondot.utils.PropHandlerz;
 
 public class RadioButton extends Hooks {
@@ -26,11 +27,13 @@ public class RadioButton extends Hooks {
 		
 		driver.get(PropHandlerz.fetchProp(URL.RURL));
 	
-		
+		AutoUtils.setTimeOut(5);
 		List<WebElement> radiobutton= driver.findElements(By.xpath("//input[@name='group1']"));
-		System.out.println(radiobutton.size());
+		int count=radiobutton.size();
+		System.out.println("radio button count "+ count);
 		
 		driver.findElement(By.xpath("//input[@value='Milk']")).click();
+		AutoUtils.setTimeOut(5);
 		
 		
 
