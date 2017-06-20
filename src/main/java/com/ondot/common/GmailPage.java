@@ -3,7 +3,6 @@ package com.ondot.common;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GmailPage {
 
@@ -20,8 +19,10 @@ public class GmailPage {
 	static By ForgotPwd = By.xpath("//a[@id='link-forgot-passwd']");
 	static By SignInWithDiffAcc = By.xpath("//span[@id='link-signin-different']/a");
 	static By CheckBoxofPage = By.xpath("//input[@id='PersistentCookie']");
+	static By DropDown =By.xpath("//select[@id='lang-chooser']");
+	
 
-	public GmailPage(WebDriver driver) {
+	public  GmailPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -74,6 +75,12 @@ public class GmailPage {
 			
 		}
 
+	}
+	
+	public void dropDown(){
+		
+		
+		
 	}
 
 }

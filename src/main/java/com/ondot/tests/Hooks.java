@@ -36,9 +36,9 @@ public class Hooks implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthe
 
  public String buildTag = System.getenv("BUILD_TAG");
 
- public String username = "venkat5438";
+ public String username = "venkatbaddam";
 
- public String accesskey = "4830b0dc-9074-4649-90a2-2a8626f84b5a";
+ public String accesskey = "2e359893-a55b-47d7-9b9b-975499ce9d50";
 
  /**
   * Constructs a {@link SauceOnDemandAuthentication} instance using the supplied user name/access key.  To use the authentication
