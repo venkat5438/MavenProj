@@ -4,7 +4,7 @@ import com.ondot.common.BaseClass;
 
 public class GmailTest  {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		
      //TODO Auto-generated method stub
