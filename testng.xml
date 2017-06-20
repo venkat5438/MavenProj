@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="newtest">
   <test name="Test">
-  <parameter name="browser" value="Chrome"></parameter>
+  <parameter name="browser" value="Firefox"></parameter>
     <classes>
       <class name="com.ondot.testng.SampleTestScript"/>
     </classes>
