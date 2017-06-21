@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="mysuite">
+<suite name="gmaillogin">
   <test name="Test">
-  <parameter name="browser" value="Chrome"></parameter>
     <classes>
-      <class name="com.ondot.testng.SampleTestScript"/>
+      <class name="com.ondot.tests.GmailLogin"/>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- mysuite -->
+</suite> <!-- gmaillogin -->
