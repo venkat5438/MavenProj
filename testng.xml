@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="gmaillogin">
   <test name="Test">
-    <classes>
+ <classes>
       <class name="com.ondot.tests.GmailLogin"/>
     </classes>
   </test> <!-- Test -->
