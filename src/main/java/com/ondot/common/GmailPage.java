@@ -9,22 +9,30 @@ public class GmailPage {
 	public static WebDriver driver;
 	// public static WebElement element;
 
-	static By UserName = By.xpath("//input[@id='Email']");
-	static By NxtButtonUname = By.xpath("//input[@id='next']");
+	static By UserName = By.xpath("//input[@id='identifierId']");
+	static By NxtButtonUname = By.xpath("//input[@id='identifierNext']/content/span]");
 	static By FindMyAccountLink = By.xpath("//div[@id='gaia_firstform']/div/a");
 	static By CreateAccountLink = By.xpath("//span[@id='link-signup']/a");
 	static By PageHeader1 = By.xpath("//div[@class='banner']/h1");
-	static By Pwd = By.xpath("//input[@id='Passwd']");
+	static By Pwd = By.xpath("//input[@id='password']/div[1]/div/div[1]/input]");
+	static By pwdnext=By.xpath("id='passwordNext']/content/span");
 	static By SignInBtn = By.xpath("//input[@id='signIn']");
 	static By ForgotPwd = By.xpath("//a[@id='link-forgot-passwd']");
 	static By SignInWithDiffAcc = By.xpath("//span[@id='link-signin-different']/a");
 	static By CheckBoxofPage = By.xpath("//input[@id='PersistentCookie']");
 	static By DropDown =By.xpath("//select[@id='lang-chooser']");
+	static By signin=By.xpath("//a[@href='https://accounts.google.com/AccountChooser?service=mail&continue=https://mail.google.com/mail/']");
 	
 
 	public  GmailPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+	}
+	
+	public void signin(){
+		
+		driver.findElement(signin).click();
+		
 	}
 
 	public void setUname(String Username) {
@@ -48,7 +56,10 @@ public class GmailPage {
 	public void setPassword(String Password) {
 		driver.findElement(Pwd).clear();
 		driver.findElement(Pwd).sendKeys(Password);
+		driver.findElement(pwdnext).click();
 	}
+	
+	
 
 	public void checkBoxClick() {
 		for (int i = 0; i < 2; i++) {

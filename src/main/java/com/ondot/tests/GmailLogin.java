@@ -42,6 +42,8 @@ GmailPage objLogin = new GmailPage(driver);
 driver.get(PropHandlerz.fetchProp("gurl"));
 	  
 AutoUtils.setTimeOut(3000);
+
+objLogin.signin();
 	  
 	  
 //Enter Username or email ID in username field
