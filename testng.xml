@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="gmaillogin">
+<suite thread-count="3" name="Suite" parallel="tests">
   <test name="Test">
- <classes>
-      <class name="com.ondot.tests.GmailLogin"/>
+  <parameter name="browser" value="Firefox" />
+    <classes>
+      <class name="com.ondot.testng.SampleTestScript"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- gmaillogin -->
+  </test>
+  <!-- <test name="firefox">
+  <parameter name="browser" value="Firefox" />
+    <classes>
+      <class name="com.ondot.testng.SampleTestScript"/>
+    </classes>
+  </test> -->
+  <!-- <test name="internet explorer">
+  <parameter name="browser" value="Firefox" />
+    <classes>
+      <class name="com.ondot.testng.SampleTestScript"/>
+    </classes>
+  </test> -->
+  </suite> <!-- Suite -->

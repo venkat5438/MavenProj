@@ -6,6 +6,8 @@ public class AutoConstants {
 		public static String URL = "url";
 		public static String RURL= "rurl";
 		public static String PURL= "purl";
+		public static String GURL= "gurl";
+		
 		
 		 
 	}
@@ -19,4 +21,6 @@ public class AutoConstants {
 		
 		
 	}
+	
+	
 }

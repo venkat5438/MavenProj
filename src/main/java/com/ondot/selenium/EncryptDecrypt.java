@@ -1,22 +1,31 @@
 package com.ondot.selenium;
 
-import com.ondot.utils.AutoConstants.UnamePwd;
+import com.ondot.utils.AutoConstants;
+import com.ondot.utils.AutoUtils;
 import com.ondot.utils.PropHandlerz;
 
 public class EncryptDecrypt  {
 	
 	public static void main(String[] args) {
 		
-	//supply pwd and encrypt 
+	
+		//below we are encrypting pwd
+		//System.out.println(AutoUtils.pwdencrypt(PropHandlerz.fetchProp(AutoConstants.UnamePwd.PWD)));
 		
 		
-	//System.out.println(AutoUtils.pwdencrypt(UnamePwd.PWD));
+		//below we are decrypting the encrypted pwd
+		System.out.println(AutoUtils.pwdDecrypt(PropHandlerz.fetchProp(AutoConstants.UnamePwd.PWD)));
+		
+		
+		
+	
+		
+		
 		
 
 	
 		
-    //supply the encrypted format to decrypt
-  System.out.println(PropHandlerz.fetchProp(UnamePwd.PWD));
+   
 		
 		
 	
