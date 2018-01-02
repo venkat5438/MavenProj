@@ -27,7 +27,15 @@ public class DatabaseConnection {
         while(rs.next())
         {
        String employeename= rs.getString("empname");
+       String empid= rs.getString("empid");
+       String empadress= rs.getString("address");
+       String empcity= rs.getString("city");
+       
             System.out.println("Database name   "+employeename);
+            System.out.println("Database name   "+empid);
+            System.out.println("Database name   "+empadress);
+            System.out.println("Database name   "+empcity);
+
 
         }
     }

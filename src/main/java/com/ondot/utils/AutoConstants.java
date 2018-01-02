@@ -22,5 +22,11 @@ public class AutoConstants {
 		
 	}
 	
+	public static class CreditCard{
+		public static String CARD="cardnumber";
+		
+		
+	}
+	
 	
 }
