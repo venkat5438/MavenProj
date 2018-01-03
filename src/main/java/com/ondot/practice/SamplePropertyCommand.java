@@ -9,7 +9,9 @@ public class SamplePropertyCommand {
 		// TODO Auto-generated method stub
 		
 		System.out.println(System.getProperty(AutoConstants.ProjectDir.ProjDir)+"\\OR.properties");
+		System.out.println(System.getProperty(AutoConstants.ProjectDir.ProjDir));
 		System.out.println(PropHandlerz.fetchProp(AutoConstants.URL.URL));
+		System.out.println(System.getProperty("user.dir"));
 
 	}
 

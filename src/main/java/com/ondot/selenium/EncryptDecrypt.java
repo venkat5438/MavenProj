@@ -14,11 +14,11 @@ public class EncryptDecrypt  {
 		
 		
 		//below we are decrypting the encrypted pwd
-		//System.out.println(AutoUtils.pwdDecrypt(PropHandlerz.fetchProp(AutoConstants.UnamePwd.PWD)));
+		System.out.println(AutoUtils.pwdDecrypt(PropHandlerz.fetchProp(AutoConstants.UnamePwd.PWD)));
 		
 		
 		//below we are decrypting the encrypted pwd
-		System.out.println(AutoUtils.pwdDecrypt(PropHandlerz.fetchProp(AutoConstants.CreditCard.CARD)));
+		//System.out.println(AutoUtils.pwdDecrypt(PropHandlerz.fetchProp(AutoConstants.CreditCard.CARD)));
 		
 		
 		
